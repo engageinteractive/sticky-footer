@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Sticky Footer</title>
+	<style>
+
+		body, html {
+			margin: 0;
+			padding: 0;
+		}
+
+		.footer {
+			padding: 20px;
+			background-color: yellow;
+			width: 100%;
+		}
+
+		.block {
+			height: 400px;
+			background-color: red;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="block"></div>
+	<div class="footer">This is the footer</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="assets/js/sticky_footer.js"></script>
+<script>
+	$(window).load(function(){
+
+		$('.footer').stickyFooter();
+
+	});
+</script>
+</body>
+</html>

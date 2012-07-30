@@ -1,4 +1,4 @@
-Sticky Footer
+# Sticky Footer
 
 ---
 

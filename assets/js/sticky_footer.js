@@ -20,8 +20,10 @@
 			offset = 0,
 			$div = this;
 
-		// Call initial positioning
-		position();
+    // Call initial positioning
+    $(window).load(function() {
+      position();
+    });
 
 		$(window).bind('resize.stickyFooter', function(){
 			position();
@@ -49,7 +51,7 @@
 				? window.innerHeight
 				: $(window).height();
 
-			if( $(document).outerHeight(true) + offset < windowHeight ){
+			if( $('body').outerHeight(true) + offset < windowHeight ){
 
 				$div.css({
 					position	: 'fixed',

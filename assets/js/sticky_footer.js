@@ -20,8 +20,10 @@
 			offset = 0,
 			$div = this;
 
-		// Call initial positioning
-		position();
+    // Call initial positioning
+    $(window).load(function() {
+      position();
+    });
 
 		$(window).bind('resize.stickyFooter', function(){
 			position();

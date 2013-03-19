@@ -49,7 +49,7 @@
 				? window.innerHeight
 				: $(window).height();
 
-			if( $('body').outerHeight(true) + offset < windowHeight ){
+			if( $(document).outerHeight(true) + offset < windowHeight ){
 
 				$div.css({
 					position	: 'fixed',
